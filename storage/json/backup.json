@@ -1,0 +1,1394 @@
+[
+   {
+    "name":"Afghanistan",
+    "code":"AF",
+    "country-code":"+93",
+    "states": []
+   },
+   {
+    "name":"Albania",
+    "code":"AL",
+    "country-code":"+355",
+    "states": []
+   },
+   {
+    "name":"Algeria",
+    "code":"DZ",
+    "country-code":"+213",
+    "states": []
+   },
+   {
+    "name":"American Samoa",
+    "code":"AS",
+    "country-code":"+1",
+    "states": []
+   },
+   {
+    "name":"Andorra",
+    "code":"AD",
+    "country-code":"+376",
+    "states": []
+   },
+   {
+    "name":"Angola",
+    "code":"AO",
+    "country-code":"+244",
+    "states": []
+   },
+   {
+    "name":"Anguilla",
+    "code":"AI",
+    "country-code":"+1",
+    "states": []
+   },
+   {
+    "name":"Antigua",
+    "code":"AG",
+    "country-code":"+1",
+    "states": []
+   },
+   {
+    "name":"Argentina",
+    "code":"AR",
+    "country-code":"+54",
+    "states": []
+   },
+   {
+    "name":"Armenia",
+    "code":"AM",
+    "country-code":"+374",
+    "states": []
+   },
+   {
+    "name":"Aruba",
+    "code":"AW",
+    "country-code":"+297",
+    "states": []
+   },
+   {
+    "name":"Australia",
+    "code":"AU",
+    "country-code":"+61",
+    "states": ["Australian Capital Territory", "New South Wales", "Northern Territory", "Queensland", "South Australia", "Tasmania", "Victoria", "Western Australia"]
+   },
+   {
+    "name":"Austria",
+    "code":"AI",
+    "country-code":"+43",
+    "states": ["Burgenland", "Kaernten", "Niederoesterreich", "Oberoesterreich", "Salzburg", "Steiermark", "Tirol", "Vorarlberg", "Wien"]
+   },
+   {
+    "name":"Azerbaijan",
+    "code":"AZ",
+    "country-code":"+994",
+    "states": []
+   },
+   {
+    "name":"Bahrain",
+    "code":"BH",
+    "country-code":"+973",
+    "states": []
+   },
+   {
+    "name":"Bangladesh",
+    "code":"BD",
+    "country-code":"+880",
+    "states": []
+   },
+   {
+    "name":"Barbados",
+    "code":"BB",
+    "country-code":"+1",
+    "states": []
+   },
+   {
+    "name":"Belarus",
+    "code":"BY",
+    "country-code":"+375",
+    "states": []
+   },
+   {
+    "name":"Belgium",
+    "code":"BE",
+    "country-code":"+32",
+    "states": []
+   },
+   {
+    "name":"Belize",
+    "code":"BZ",
+    "country-code":"+501",
+    "states": []
+   },
+   {
+    "name":"Benin",
+    "code":"BJ",
+    "country-code":"+229",
+    "states": []
+   },
+   {
+    "name":"Bermuda",
+    "code":"BM",
+    "country-code":"+1",
+    "states": []
+   },
+   {
+    "name":"Bhutan",
+    "code":"BT",
+    "country-code":"+975",
+    "states": []
+   },
+   {
+    "name":"Bolivia",
+    "code":"BO",
+    "country-code":"+591",
+    "states": []
+   },
+   {
+    "name":"Bosnia and Herzegovina",
+    "code":"BA",
+    "country-code":"+387",
+    "states": []
+   },
+   {
+    "name":"Botswana",
+    "code":"BW",
+    "country-code":"+267",
+    "states": []
+   },
+   {
+    "name":"Brazil",
+    "code":"BR",
+    "country-code":"+55",
+    "states": []
+   },
+   {
+    "name":"British Indian Ocean Territory",
+    "code":"IO",
+    "country-code":"+246",
+    "states": []
+   },
+   {
+    "name":"British Virgin Islands",
+    "code":"VG",
+    "country-code":"+1",
+    "states": []
+   },
+   {
+    "name":"Brunei",
+    "code":"BN",
+    "country-code":"+673",
+    "states": []
+   },
+   {
+    "name":"Bulgaria",
+    "code":"BG",
+    "country-code":"+359",
+    "states": []
+   },
+   {
+    "name":"Burkina Faso",
+    "code":"BF",
+    "country-code":"+226",
+    "states": []
+   },
+   {
+    "name":"Burma Myanmar",
+    "code":"MM",
+    "country-code":"+95",
+    "states": []
+   },
+   {
+    "name":"Burundi",
+    "code":"BI",
+    "country-code":"+257",
+    "states": []
+   },
+   {
+    "name":"Cambodia",
+    "code":"KH",
+    "country-code":"+855",
+    "states": []
+   },
+   {
+    "name":"Cameroon",
+    "code":"CM",
+    "country-code":"+237",
+    "states": []
+   },
+   {
+    "name":"Canada",
+    "code":"CA",
+    "country-code":"+1",
+    "states": ["Alberta", "British Columbia", "Manitoba", "New Brunswick", "Newfoundland and Labrador", "Northwest Territories", "Nova Scotia", "Nunavut", "Ontario", "Prince Edward Island", "Quebec", "Saskatchewan", "Yukon Territory"]
+   },
+   {
+    "name":"Cape Verde",
+    "code":"CV",
+    "country-code":"+238",
+    "states": []
+   },
+   {
+    "name":"Cayman Islands",
+    "code":"KY",
+    "country-code":"+1",
+    "states": []
+   },
+   {
+    "name":"Central African Republic",
+    "code":"CF",
+    "country-code":"+236",
+    "states": []
+   },
+   {
+    "name":"Chad",
+    "code":"ID",
+    "country-code":"+235",
+    "states": []
+   },
+   {
+    "name":"Chile",
+    "code":"CL",
+    "country-code":"+56",
+    "states": []
+   },
+   {
+    "name":"China",
+    "code":"CN",
+    "country-code":"+86",
+    "states": []
+   },
+   {
+    "name":"Colombia",
+    "code":"CO",
+    "country-code":"+57",
+    "states": []
+   },
+   {
+    "name":"Comoros",
+    "code":"KM",
+    "country-code":"+269",
+    "states": []
+   },
+   {
+    "name":"Cook Islands",
+    "code":"CK",
+    "country-code":"+682",
+    "states": []
+   },
+   {
+    "name":"Costa Rica",
+    "code":"CR",
+    "country-code":"+506",
+    "states": []
+   },
+   {
+    "name":"Côte dIvoire",
+    "code":"CI",
+    "country-code":"+225",
+    "states": []
+   },
+   {
+    "name":"Croatia",
+    "code":"HR",
+    "country-code":"+385",
+    "states": []
+   },
+   {
+    "name":"Cuba",
+    "code":"CU",
+    "country-code":"+53",
+    "states": []
+   },
+   {
+    "name":"Cyprus",
+    "code":"CY",
+    "country-code":"+357",
+    "states": []
+   },
+   {
+    "name":"Czech Republic",
+    "code":"CZ",
+    "country-code":"+420",
+    "states": []
+   },
+   {
+    "name":"Democratic Republic of Congo",
+    "code":"CD",
+    "country-code":"+243",
+    "states": []
+   },
+   {
+    "name":"Denmark",
+    "code":"DK",
+    "country-code":"+45",
+    "states": []
+   },
+   {
+    "name":"Djibouti",
+    "code":"DJ",
+    "country-code":"+253",
+    "states": []
+   },
+   {
+    "name":"Dominica",
+    "code":"DM",
+    "country-code":"+1",
+    "states": []
+   },
+   {
+    "name":"Dominican Republic",
+    "code":"DO",
+    "country-code":"+1",
+    "states": []
+   },
+   {
+    "name":"Ecuador",
+    "code":"EC",
+    "country-code":"+593",
+    "states": []
+   },
+   {
+    "name":"Egypt",
+    "code":"EG",
+    "country-code":"+20",
+    "states": []
+   },
+   {
+    "name":"El Salvador",
+    "code":"SV",
+    "country-code":"+503",
+    "states": []
+   },
+   {
+    "name":"Equatorial Guinea",
+    "code":"GQ",
+    "country-code":"+240",
+    "states": []
+   },
+   {
+    "name":"Eritrea",
+    "code":"ER",
+    "country-code":"+291",
+    "states": []
+   },
+   {
+    "name":"Estonia",
+    "code":"EE",
+    "country-code":"+372",
+    "states": []
+   },
+   {
+    "name":"Ethiopia",
+    "code":"ET",
+    "country-code":"+251",
+    "states": []
+   },
+   {
+    "name":"Falkland Islands",
+    "code":"FK",
+    "country-code":"+500",
+    "states": []
+   },
+   {
+    "name":"Faroe Islands",
+    "code":"FO",
+    "country-code":"+298",
+    "states": []
+   },
+   {
+    "name":"Federated States of Micronesia",
+    "code":"FM",
+    "country-code":"+691",
+    "states": []
+   },
+   {
+    "name":"Fiji",
+    "code":"FJ",
+    "country-code":"+679",
+    "states": []
+   },
+   {
+    "name":"Finland",
+    "code":"FI",
+    "country-code":"+358",
+    "states": []
+   },
+   {
+    "name":"France",
+    "code":"FR",
+    "country-code":"+33",
+    "states": []
+   },
+   {
+    "name":"French Guiana",
+    "code":"GF",
+    "country-code":"+594",
+    "states": []
+   },
+   {
+    "name":"French Polynesia",
+    "code":"PF",
+    "country-code":"+689",
+    "states": []
+   },
+   {
+    "name":"Gabon",
+    "code":"GA",
+    "country-code":"+241",
+    "states": []
+   },
+   {
+    "name":"Georgia",
+    "code":"GE",
+    "country-code":"+995",
+    "states": []
+   },
+   {
+    "name":"Germany",
+    "code":"DE",
+    "country-code":"+49",
+    "states": []
+   },
+   {
+    "name":"Ghana",
+    "code":"GH",
+    "country-code":"+233",
+    "states": []
+   },
+   {
+    "name":"Gibraltar",
+    "code":"GI",
+    "country-code":"+350",
+    "states": []
+   },
+   {
+    "name":"Greece",
+    "code":"GR",
+    "country-code":"+30",
+    "states": []
+   },
+   {
+    "name":"Greenland",
+    "code":"GL",
+    "country-code":"+299",
+    "states": []
+   },
+   {
+    "name":"Grenada",
+    "code":"GD",
+    "country-code":"+1",
+    "states": []
+   },
+   {
+    "name":"Guadeloupe",
+    "code":"GP",
+    "country-code":"+590",
+    "states": []
+   },
+   {
+    "name":"Guam",
+    "code":"GU",
+    "country-code":"+1",
+    "states": []
+   },
+   {
+    "name":"Guatemala",
+    "code":"GT",
+    "country-code":"+502",
+    "states": []
+   },
+   {
+    "name":"Guinea",
+    "code":"GN",
+    "country-code":"+224",
+    "states": []
+   },
+   {
+    "name":"Guinea-Bissau",
+    "code":"GW",
+    "country-code":"+245",
+    "states": []
+   },
+   {
+    "name":"Guyana",
+    "code":"GY",
+    "country-code":"+592",
+    "states": []
+   },
+   {
+    "name":"Haiti",
+    "code":"HT",
+    "country-code":"+509",
+    "states": []
+   },
+   {
+    "name":"Honduras",
+    "code":"HN",
+    "country-code":"+504",
+    "states": []
+   },
+   {
+    "name":"Hong Kong",
+    "code":"HK",
+    "country-code":"+852",
+    "states": []
+   },
+   {
+    "name":"Hungary",
+    "code":"HU",
+    "country-code":"+36",
+    "states": []
+   },
+   {
+    "name":"Iceland",
+    "code":"IS",
+    "country-code":"+354",
+    "states": []
+   },
+   {
+    "name":"India",
+    "code":"IN",
+    "country-code":"+91",
+    "states": ["Andaman and Nicobar Islands", "Andhra Pradesh", "Arunachal Pradesh", "Assam", "Bihar", "Chandigarh", "Chhattisgarh", "Dadra and Nagar Haveli", "Daman and Diu", "Delhi", "Goa", "Gujarat", "Haryana", "Himachal Pradesh", "Jammu and Kashmir", "Jharkhand", "Karnataka", "Kerala", "Lakshadweep", "Madhya Pradesh", "Maharashtra", "Manipur", "Meghalaya", "Mizoram", "Nagaland", "Orissa", "Pondicherry", "Punjab", "Rajasthan", "Sikkim", "Tamil Nadu", "Tripura", "Uttaranchal", "Uttar Pradesh", "West Bengal"]
+   },
+   {
+    "name":"Indonesia",
+    "code":"ID",
+    "country-code":"+62",
+    "states": []
+   },
+   {
+    "name":"Iran",
+    "code":"IR",
+    "country-code":"+98",
+    "states": []
+   },
+   {
+    "name":"Iraq",
+    "code":"IQ",
+    "country-code":"+964",
+    "states": []
+   },
+   {
+    "name":"Ireland",
+    "code":"IE",
+    "country-code":"+353",
+    "states": []
+   },
+   {
+    "name":"Israel",
+    "code":"IL",
+    "country-code":"+972",
+    "states": []
+   },
+   {
+    "name":"Italy",
+    "code":"IT",
+    "country-code":"+39",
+    "states": []
+   },
+   {
+    "name":"Jamaica",
+    "code":"JM",
+    "country-code":"+1",
+    "states": []
+   },
+   {
+    "name":"Japan",
+    "code":"JP",
+    "country-code":"+81",
+    "states": []
+   },
+   {
+    "name":"Jordan",
+    "code":"JO",
+    "country-code":"+962",
+    "states": []
+   },
+   {
+    "name":"Kazakhstan",
+    "code":"KZ",
+    "country-code":"+7",
+    "states": []
+   },
+   {
+    "name":"Kenya",
+    "code":"KE",
+    "country-code":"+254",
+    "states": []
+   },
+   {
+    "name":"Kiribati",
+    "code":"KI",
+    "country-code":"+686",
+    "states": []
+   },
+   {
+    "name":"Kosovo",
+    "code":"XK",
+    "country-code":"+383",
+    "states": []
+   },
+   {
+    "name":"Kuwait",
+    "code":"KW",
+    "country-code":"+965",
+    "states": []
+   },
+   {
+    "name":"Kyrgyzstan",
+    "code":"KG",
+    "country-code":"+996",
+    "states": []
+   },
+   {
+    "name":"Laos",
+    "code":"LA",
+    "country-code":"+856",
+    "states": []
+   },
+   {
+    "name":"Latvia",
+    "code":"LV",
+    "country-code":"+371",
+    "states": []
+   },
+   {
+    "name":"Lebanon",
+    "code":"LB",
+    "country-code":"+961",
+    "states": []
+   },
+   {
+    "name":"Lesotho",
+    "code":"LS",
+    "country-code":"+266",
+    "states": []
+   },
+   {
+    "name":"Liberia",
+    "code":"LR",
+    "country-code":"+231",
+    "states": []
+   },
+   {
+    "name":"Libya",
+    "code":"LY",
+    "country-code":"+218",
+    "states": []
+   },
+   {
+    "name":"Liechtenstein",
+    "code":"LI",
+    "country-code":"+423",
+    "states": []
+   },
+   {
+    "name":"Lithuania",
+    "code":"LT",
+    "country-code":"+370",
+    "states": []
+   },
+   {
+    "name":"Luxembourg",
+    "code":"LU",
+    "country-code":"+352",
+    "states": []
+   },
+   {
+    "name":"Macau",
+    "code":"MO",
+    "country-code":"+853",
+    "states": []
+   },
+   {
+    "name":"Macedonia",
+    "code":"MK",
+    "country-code":"+389",
+    "states": []
+   },
+   {
+    "name":"Madagascar",
+    "code":"MG",
+    "country-code":"+261",
+    "states": []
+   },
+   {
+    "name":"Malawi",
+    "code":"MW",
+    "country-code":"+265",
+    "states": []
+   },
+   {
+    "name":"Malaysia",
+    "code":"MY",
+    "country-code":"+60",
+    "states": []
+   },
+   {
+    "name":"Maldives",
+    "code":"MV",
+    "country-code":"+960",
+    "states": []
+   },
+   {
+    "name":"Mali",
+    "code":"ML",
+    "country-code":"+223",
+    "states": []
+   },
+   {
+    "name":"Malta",
+    "code":"MT",
+    "country-code":"+356",
+    "states": []
+   },
+   {
+    "name":"Marshall Islands",
+    "code":"MH",
+    "country-code":"+692",
+    "states": []
+   },
+   {
+    "name":"Martinique",
+    "code":"MQ",
+    "country-code":"+596",
+    "states": []
+   },
+   {
+    "name":"Mauritania",
+    "code":"MR",
+    "country-code":"+222",
+    "states": []
+   },
+   {
+    "name":"Mauritius",
+    "code":"MU",
+    "country-code":"+230",
+    "states": []
+   },
+   {
+    "name":"Mayotte",
+    "code":"YT",
+    "country-code":"+262",
+    "states": []
+   },
+   {
+    "name":"Mexico",
+    "code":"MX",
+    "country-code":"+52",
+    "states": []
+   },
+   {
+    "name":"Moldova",
+    "code":"MD",
+    "country-code":"+373",
+    "states": []
+   },
+   {
+    "name":"Monaco",
+    "code":"MC",
+    "country-code":"+377",
+    "states": []
+   },
+   {
+    "name":"Mongolia",
+    "code":"MN",
+    "country-code":"+976",
+    "states": []
+   },
+   {
+    "name":"Montenegro",
+    "code":"ME",
+    "country-code":"+382",
+    "states": []
+   },
+   {
+    "name":"Montserrat",
+    "code":"MS",
+    "country-code":"+1",
+    "states": []
+   },
+   {
+    "name":"Morocco",
+    "code":"MA",
+    "country-code":"+212",
+    "states": []
+   },
+   {
+    "name":"Mozambique",
+    "code":"MZ",
+    "country-code":"+258",
+    "states": []
+   },
+   {
+    "name":"Namibia",
+    "code":"NA",
+    "country-code":"+264",
+    "states": []
+   },
+   {
+    "name":"Nauru",
+    "code":"NR",
+    "country-code":"+674",
+    "states": []
+   },
+   {
+    "name":"Nepal",
+    "code":"NP",
+    "country-code":"+977",
+    "states": []
+   },
+   {
+    "name":"Netherlands",
+    "code":"NL",
+    "country-code":"+31",
+    "states": []
+   },
+   {
+    "name":"Netherlands Antilles",
+    "code":"AN",
+    "country-code":"+599",
+    "states": []
+   },
+   {
+    "name":"New Caledonia",
+    "code":"NC",
+    "country-code":"+687",
+    "states": []
+   },
+   {
+    "name":"New Zealand",
+    "code":"NZ",
+    "country-code":"+64",
+    "states": ["Auckland", "Bay of Plenty", "Canterbury", "Chatham Islands", "Gisborne", "Hawke's Bay", "Manawatu-Wanganui", "Marlborough", "Nelson", "Northland", "Otago", "Southland", "Taranaki", "Tasman", "Waikato", "Wellington", "West Coast"]
+   },
+   {
+    "name":"Nicaragua",
+    "code":"NI",
+    "country-code":"+505",
+    "states": []
+   },
+   {
+    "name":"Niger",
+    "code":"NE",
+    "country-code":"+227",
+    "states": []
+   },
+   {
+    "name":"Nigeria",
+    "code":"NG",
+    "country-code":"+234",
+    "states": []
+   },
+   {
+    "name":"Niue",
+    "code":"NU",
+    "country-code":"+683",
+    "states": []
+   },
+   {
+    "name":"Norfolk Island",
+    "code":"NF",
+    "country-code":"+672",
+    "states": []
+   },
+   {
+    "name":"North Korea",
+    "code":"KP",
+    "country-code":"+850",
+    "states": []
+   },
+   {
+    "name":"Northern Mariana Islands",
+    "code":"MP",
+    "country-code":"+1",
+    "states": []
+   },
+   {
+    "name":"Norway",
+    "code":"NO",
+    "country-code":"+47",
+    "states": []
+   },
+   {
+    "name":"Oman",
+    "code":"OM",
+    "country-code":"+968",
+    "states": []
+   },
+   {
+    "name":"Pakistan",
+    "code":"PK",
+    "country-code":"+92",
+    "states": []
+   },
+   {
+    "name":"Palau",
+    "code":"PW",
+    "country-code":"+680",
+    "states": []
+   },
+   {
+    "name":"Palestine",
+    "code":"PS",
+    "country-code":"+970",
+    "states": []
+   },
+   {
+    "name":"Panama",
+    "code":"PA",
+    "country-code":"+507",
+    "states": []
+   },
+   {
+    "name":"Papua New Guinea",
+    "code":"PG",
+    "country-code":"+675",
+    "states": []
+   },
+   {
+    "name":"Paraguay",
+    "code":"PY",
+    "country-code":"+595",
+    "states": []
+   },
+   {
+    "name":"Peru",
+    "code":"PE",
+    "country-code":"+51",
+    "states": []
+   },
+   {
+    "name":"Philippines",
+    "code":"PH",
+    "country-code":"+63",
+    "states": []
+   },
+   {
+    "name":"Poland",
+    "code":"PL",
+    "country-code":"+48",
+    "states": []
+   },
+   {
+    "name":"Portugal",
+    "code":"PT",
+    "country-code":"+351",
+    "states": []
+   },
+   {
+    "name":"Puerto Rico",
+    "code":"PR",
+    "country-code":"+1",
+    "states": []
+   },
+   {
+    "name":"Qatar",
+    "code":"QA",
+    "country-code":"+974",
+    "states": []
+   },
+   {
+    "name":"Republic of the Congo",
+    "code":"CG",
+    "country-code":"+242",
+    "states": []
+   },
+   {
+    "name":"Réunion",
+    "code":"RE",
+    "country-code":"+262",
+    "states": []
+   },
+   {
+    "name":"Romania",
+    "code":"RO",
+    "country-code":"+40",
+    "states": []
+   },
+   {
+    "name":"Russia",
+    "code":"RU",
+    "country-code":"+7",
+    "states": []
+   },
+   {
+    "name":"Rwanda",
+    "code":"RW",
+    "country-code":"+250",
+    "states": []
+   },
+   {
+    "name":"Saint Barthélemy",
+    "code":"BL",
+    "country-code":"+590",
+    "states": []
+   },
+   {
+    "name":"Saint Helena",
+    "code":"SH",
+    "country-code":"+290",
+    "states": []
+   },
+   {
+    "name":"Saint Kitts and Nevis",
+    "code":"KN",
+    "country-code":"+1",
+    "states": []
+   },
+   {
+    "name":"Saint Martin",
+    "code":"MF",
+    "country-code":"+590",
+    "states": []
+   },
+   {
+    "name":"Saint Pierre and Miquelon",
+    "code":"PM",
+    "country-code":"+508",
+    "states": []
+   },
+   {
+    "name":"Saint Vincent and the Grenadines",
+    "code":"VC",
+    "country-code":"+1",
+    "states": []
+   },
+   {
+    "name":"Samoa",
+    "code":"WS",
+    "country-code":"+685",
+    "states": []
+   },
+   {
+    "name":"San Marino",
+    "code":"SM",
+    "country-code":"+378",
+    "states": []
+   },
+   {
+    "name":"São Tomé and Príncipe",
+    "code":"ST",
+    "country-code":"+239",
+    "states": []
+   },
+   {
+    "name":"Saudi Arabia",
+    "code":"SA",
+    "country-code":"+966",
+    "states": []
+   },
+   {
+    "name":"Senegal",
+    "code":"SN",
+    "country-code":"+221",
+    "states": []
+   },
+   {
+    "name":"Serbia",
+    "code":"RS",
+    "country-code":"+381",
+    "states": []
+   },
+   {
+    "name":"Seychelles",
+    "code":"SC",
+    "country-code":"+248",
+    "states": []
+   },
+   {
+    "name":"Sierra Leone",
+    "code":"SL",
+    "country-code":"+232",
+    "states": []
+   },
+   {
+    "name":"Singapore",
+    "code":"SG",
+    "country-code":"+65",
+    "states": []
+   },
+   {
+    "name":"Slovakia",
+    "code":"SK",
+    "country-code":"+421",
+    "states": []
+   },
+   {
+    "name":"Slovenia",
+    "code":"SI",
+    "country-code":"+386",
+    "states": []
+   },
+   {
+    "name":"Solomon Islands",
+    "code":"SB",
+    "country-code":"+677",
+    "states": []
+   },
+   {
+    "name":"Somalia",
+    "code":"SO",
+    "country-code":"+252",
+    "states": []
+   },
+   {
+    "name":"South Africa",
+    "code":"ZA",
+    "country-code":"+27",
+    "states": []
+   },
+   {
+    "name":"South Korea",
+    "code":"KR",
+    "country-code":"+82",
+    "states": []
+   },
+   {
+    "name":"Spain",
+    "code":"ES",
+    "country-code":"+34",
+    "states": []
+   },
+   {
+    "name":"Sri Lanka",
+    "code":"LK",
+    "country-code":"+94",
+    "states": []
+   },
+   {
+    "name":"St. Lucia",
+    "code":"LC",
+    "country-code":"+1",
+    "states": []
+   },
+   {
+    "name":"Sudan",
+    "code":"SD",
+    "country-code":"+249",
+    "states": []
+   },
+   {
+    "name":"Suriname",
+    "code":"SR",
+    "country-code":"+597",
+    "states": []
+   },
+   {
+    "name":"Swaziland",
+    "code":"SZ",
+    "country-code":"+268",
+    "states": []
+   },
+   {
+    "name":"Sweden",
+    "code":"SE",
+    "country-code":"+46",
+    "states": ["Blekinge", "Dalarna", "Gävleborg", "Gotland", "Halland", "Jämtland", "Jönköping", "Kalmar", "Kronoberg", "Norrbotten", "Örebro", "Östergötland", "Skåne", "Södermanland", "Stockholm", "Uppsala", "Värmland", "Västerbotten", "Västernorrland", "Västmanland", "Västra Götaland"]
+   },
+   {
+    "name":"Switzerland",
+    "code":"CH",
+    "country-code":"+41",
+    "states": []
+   },
+   {
+    "name":"Syria",
+    "code":"SY",
+    "country-code":"+963",
+    "states": []
+   },
+   {
+    "name":"Taiwan",
+    "code":"TW",
+    "country-code":"+886",
+    "states": []
+   },
+   {
+    "name":"Tajikistan",
+    "code":"TJ",
+    "country-code":"+992",
+    "states": []
+   },
+   {
+    "name":"Tanzania",
+    "code":"TZ",
+    "country-code":"+255",
+    "states": []
+   },
+   {
+    "name":"Thailand",
+    "code":"TH",
+    "country-code":"+66",
+    "states": []
+   },
+   {
+    "name":"The Bahamas",
+    "code":"BS",
+    "country-code":"+1",
+    "states": []
+   },
+   {
+    "name":"The Gambia",
+    "code":"GM",
+    "country-code":"+220",
+    "states": []
+   },
+   {
+    "name":"Timor-Leste",
+    "code":"TL",
+    "country-code":"+670",
+    "states": []
+   },
+   {
+    "name":"Togo",
+    "code":"TG",
+    "country-code":"+228",
+    "states": []
+   },
+   {
+    "name":"Tokelau",
+    "code":"TK",
+    "country-code":"+690",
+    "states": []
+   },
+   {
+    "name":"Tonga",
+    "code":"TO",
+    "country-code":"+676",
+    "states": []
+   },
+   {
+    "name":"Trinidad and Tobago",
+    "code":"TT",
+    "country-code":"+1",
+    "states": []
+   },
+   {
+    "name":"Tunisia",
+    "code":"TN",
+    "country-code":"+216",
+    "states": []
+   },
+   {
+    "name":"Turkey",
+    "code":"TR",
+    "country-code":"+90",
+    "states": []
+   },
+   {
+    "name":"Turkmenistan",
+    "code":"TM",
+    "country-code":"+993",
+    "states": []
+   },
+   {
+    "name":"Turks and Caicos Islands",
+    "code":"TC",
+    "country-code":"+1",
+    "states": []
+   },
+   {
+    "name":"Tuvalu",
+    "code":"TV",
+    "country-code":"+688",
+    "states": []
+   },
+   {
+    "name":"Uganda",
+    "code":"UG",
+    "country-code":"+256",
+    "states": []
+   },
+   {
+    "name":"Ukraine",
+    "code":"UA",
+    "country-code":"+380",
+    "states": []
+   },
+   {
+    "name":"United Arab Emirates",
+    "code":"AE",
+    "country-code":"+971",
+    "states": []
+   },
+   {
+    "name":"United Kingdom",
+    "code":"GB",
+    "country-code":"+44",
+    "states": [ "Aberconwy and Colwyn", "Aberdeen City", "Aberdeenshire", "Anglesey", "Angus", "Antrim", "Argyll and Bute", "Armagh", "Avon", "Ayrshire", "Bath and NE Somerset", "Bedfordshire", "Belfast", "Berkshire", "Berwickshire", "BFPO", "Blaenau Gwent", "Buckinghamshire", "Caernarfonshire", "Caerphilly", "Caithness", "Cambridgeshire", "Cardiff", "Cardiganshire", "Carmarthenshire", "Ceredigion", "Channel Islands", "Cheshire", "City of Bristol", "Clackmannanshire", "Clwyd", "Conwy", "Cornwall/Scilly", "Cumbria", "Denbighshire", "Derbyshire", "Derry/Londonderry", "Devon", "Dorset", "Down", "Dumfries and Galloway", "Dunbartonshire", "Dundee", "Durham", "Dyfed", "East Ayrshire", "East Dunbartonshire", "East Lothian", "East Renfrewshire", "East Riding Yorkshire", "East Sussex", "Edinburgh", "England", "Essex", "Falkirk", "Fermanagh", "Fife", "Flintshire", "Glasgow", "Gloucestershire", "Greater London", "Greater Manchester", "Gwent", "Gwynedd", "Hampshire", "Hartlepool", "Hereford and Worcester", "Hertfordshire", "Highlands", "Inverclyde", "Inverness-Shire", "Isle of Man", "Isle of Wight", "Kent", "Kincardinshire", "Kingston Upon Hull", "Kinross-Shire", "Kirklees", "Lanarkshire", "Lancashire", "Leicestershire", "Lincolnshire", "Londonderry", "Merseyside", "Merthyr Tydfil", "Mid Glamorgan", "Mid Lothian", "Middlesex", "Monmouthshire", "Moray", "Neath & Port Talbot", "Newport", "Norfolk", "North Ayrshire", "North East Lincolnshire", "North Lanarkshire", "North Lincolnshire", "North Somerset", "North Yorkshire", "Northamptonshire", "Northern Ireland", "Northumberland", "Nottinghamshire", "Orkney and Shetland Isles", "Oxfordshire", "Pembrokeshire", "Perth and Kinross", "Powys", "Redcar and Cleveland", "Renfrewshire", "Rhonda Cynon Taff", "Rutland", "Scottish Borders", "Shetland", "Shropshire", "Somerset", "South Ayrshire", "South Glamorgan", "South Gloucesteshire", "South Lanarkshire", "South Yorkshire", "Staffordshire", "Stirling", "Stockton On Tees", "Suffolk", "Surrey", "Swansea", "Torfaen", "Tyne and Wear", "Tyrone", "Vale Of Glamorgan", "Wales", "Warwickshire", "West Berkshire", "West Dunbartonshire", "West Glamorgan", "West Lothian", "West Midlands", "West Sussex", "West Yorkshire", "Western Isles", "Wiltshire", "Wirral", "Worcestershire", "Wrexham", "York" ]
+   },
+   {
+    "name":"United States",
+    "code":"US",
+    "country-code":"+1",
+    "states": ["Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut", "Delaware", "District of Columbia", "Florida", "Georgia", "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa", "Kansas", "Kentucky", "Louisiana", "Maine", "Maryland", "Massachusetts", "Michigan", "Minnesota", "Mississippi", "Missouri", "Montana", "Nebraska", "Nevada", "New Hampshire", "New Jersey", "New Mexico", "New York", "North Carolina", "North Dakota", "Ohio", "Oklahoma", "Oregon", "Pennsylvania", "Rhode Island", "South Carolina", "South Dakota", "Tennessee", "Texas", "Utah", "Vermont", "Virginia", "Washington", "West Virginia", "Wisconsin", "Wyoming"]
+   },
+   {
+    "name":"Uruguay",
+    "code":"UY",
+    "country-code":"+598",
+    "states": []
+   },
+   {
+    "name":"US Virgin Islands",
+    "code":"VI",
+    "country-code":"+1",
+    "states": []
+   },
+   {
+    "name":"Uzbekistan",
+    "code":"UZ",
+    "country-code":"+998",
+    "states": []
+   },
+   {
+    "name":"Vanuatu",
+    "code":"VU",
+    "country-code":"+678",
+    "states": []
+   },
+   {
+    "name":"Vatican City",
+    "code":"VA",
+    "country-code":"+39",
+    "states": []
+   },
+   {
+    "name":"Venezuela",
+    "code":"VE",
+    "country-code":"+58",
+    "states": []
+   },
+   {
+    "name":"Vietnam",
+    "code":"VN",
+    "country-code":"+84",
+    "states": []
+   },
+   {
+    "name":"Wallis and Futuna",
+    "code":"WF",
+    "country-code":"+681",
+    "states": []
+   },
+   {
+    "name":"Yemen",
+    "code":"YE",
+    "country-code":"+967",
+    "states": []
+   },
+   {
+    "name":"Zambia",
+    "code":"ZM",
+    "country-code":"+260",
+    "states": []
+   },
+   {
+    "name":"Zimbabwe",
+    "code":"ZW",
+    "country-code":"+263",
+    "states": []
+   }
+]

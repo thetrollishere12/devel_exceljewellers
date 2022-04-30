@@ -1,0 +1,75 @@
+   @media only screen and (min-width:0px) {
+       #item-container {
+       grid-template-columns: 1fr
+       }
+
+   }
+   @media only screen and (min-width:768px) {
+       #item-container {
+       grid-template-columns: 55% 45%
+       }
+   }
+
+   .metal-case.Yellow,
+   .metal-case.yellow {
+   background: #fff3a1
+   }
+   .metal-case.White,
+   .metal-case.white {
+   background: #dedede
+   }
+   .metal-case.Palladium,
+   .metal-case.palladium {
+   background: #9ec7e6
+   }
+   .metal-case.WhiteYellow,
+   .metal-case.YellowWhite,
+   .metal-case.whiteyellow,
+   .metal-case.yellowwhite {
+   background: linear-gradient(45deg, #fff3a1 0, #dedede 70%)
+   }
+   .metal-case.RoseWhite,
+   .metal-case.WhiteRose,
+   .metal-case.Whiterose,
+   .metal-case.rosewhite,
+   .metal-case.whiterose {
+   background: linear-gradient(45deg, #fc656f 0, #dedede 70%)
+   }
+   .metal-case.Rose,
+   .metal-case.rose {
+   background: #fc656f
+   }
+   .metal-case.PlatinumYellow,
+   .metal-case.YellowPlatinum,
+   .metal-case.platinumyellow,
+   .metal-case.yellowplatinum {
+   background: linear-gradient(45deg, #fff3a1 0, #adc7c3 70%)
+   }
+   .metal-case.PlatinumRose,
+   .metal-case.RosePlatinum,
+   .metal-case.platinumrose,
+   .metal-case.roseplatinum {
+   background: linear-gradient(45deg, #fc656f 0, #adc7c3 70%)
+   }
+   .metal-case.Platinum,
+   .metal-case.platinum {
+   background: #adc7c3;
+   }
+   .metal-case.Silver,
+   .metal-case.silver,
+   .metal-case.slv {
+   background: #ebebeb
+   }
+
+
+.other-img-ctn{
+    border: 1px solid rgb(230, 230, 230);
+}
+
+.main-image canvas{
+    border: 1px solid rgb(230, 230, 230);
+}
+
+.cloudimage-360-icons-container{
+  z-index: 0 !important;
+}

@@ -1,0 +1,58 @@
+{
+	"Guildford":{
+
+		"Monday":{
+			"hours":"10:00am-7:00pm"
+		},
+		"Tuesday":{
+			"hours":"10:00am-7:00pm"
+		},
+		"Wednesday":{
+			"hours":"10:00am-7:00pm"
+		},
+		"Thursday":{
+			"hours":"10:00am-7:00pm"
+		},
+		"Friday":{
+			"hours":"10:00am-9:00pm"
+		},
+		"Saturday":{
+			"hours":"10:00am-9:00pm"
+		},
+		"Sunday":{
+			"hours":"11:00am-7:00pm"
+		},
+		"Statutory Holidays":{
+			"hours":"11:00am-7:00pm"
+		}
+
+	},
+	"Langley":{
+
+		"Monday":{
+			"hours":"Closed"
+		},
+		"Tuesday":{
+			"hours":"10:00am-5:30pm"
+		},
+		"Wednesday":{
+			"hours":"10:00am-5:30pm"
+		},
+		"Thursday":{
+			"hours":"10:00am-5:30pm"
+		},
+		"Friday":{
+			"hours":"10:00am-5:30pm"
+		},
+		"Saturday":{
+			"hours":"10:00am-5:30pm"
+		},
+		"Sunday":{
+			"hours":"Closed"
+		},
+		"Statutory Holidays":{
+			"hours":"Closed"
+		}
+
+	}
+}

@@ -1,0 +1,146 @@
+{
+	"" : {
+		"title" : "Women Diamond Fine Jewellery Excel Jewellers Surrey Canada",
+		"description":"Explore Our Diamond Fine Jewellery For Men/Women.Shop Gemstone Pearl Fine Jewellery from White Yellow Rose Gold At Excel Jewellers Surrey Langley Burnaby Canada",
+		"canonical":"fine-jewellery",
+		"h1":"FINE JEWELLERY"
+	},
+	"bracelets" : {
+		"title" : "Gold Diamond Bracelet For Women Excel Jewellers Surrey Canada",
+		"description":"Explore Our Gold Diamond Bracelets. Shop Pearl Bracelets Charm From Yellow White Rose Gold At Excel Jewellers Canada Langley Surrey Burnaby Abbotsford Vancouver",
+		"canonical":"fine-jewellery?category=bracelet",
+		"h1":"BRACELETS"
+	},
+	"bangle" : {
+		"title" : "Gold Diamond Bangle Bracelet Excel Jewellers Surrey Canada",
+		"description":"Explore Our Gold Diamond Bangle Bracelet Set.Shop Bangle Bracelet From Yellow White Rose Gold At Excel Jewellers Canada Langley Surrey Burnaby Abbotsford",
+		"canonical":"fine-jewellery?style=bangle&category=bracelet",
+		"h1":"BANGLE BRACELET"
+	},
+	"chain" : {
+		"title" : "Gold Diamond Chain Bracelet Excel Jewellers Surrey Canada",
+		"description":"Explore Our Gold Diamond Chain Bracelet Set.Shop Chain Bracelet From Yellow White Rose Gold At Excel Jewellers Canada Langley Surrey Burnaby Abbotsford Guildford",
+		"canonical":"fine-jewellery?style=chain&category=bracelet",
+		"h1":"CHAIN BRACELET"
+	},
+	"charm" : {
+		"title" : "Gold Diamond Charm Bracelet Excel Jewellers Surrey Canada",
+		"description":"Explore Our Gold Diamond Charm Bracelet Set.Shop Charm Bracelet From Yellow White Rose Gold At Excel Jewellers Canada Langley Surrey Burnaby Abbotsford Guildford",
+		"canonical":"fine-jewellery?style=charm&category=bracelet",
+		"h1":"CHARM BRACELET"
+	},
+	"cuff" : {
+		"title" : "Gold Diamond Cuff Bracelet Excel Jewellers Surrey Canada",
+		"description":"Explore Our Gold Diamond Cuff Bracelet Set.Shop Cuff Bracelet From Yellow White Rose Gold At Excel Jewellers Canada Langley Surrey Burnaby Abbotsford Guildford",
+		"canonical":"fine-jewellery?style=cuff&category=bracelet",
+		"h1":"CUFF BRACELET"
+	},
+	"heart" : {
+		"title" : "Gold Diamond Heart Bracelet Excel Jewellers Surrey Canada",
+		"description":"Explore Our Gold Diamond Heart Bracelet Set.Shop Heart Bracelet From Yellow White Rose Gold At Excel Jewellers Canada Langley Surrey Burnaby Abbotsford Guildford",
+		"canonical":"fine-jewellery?style=heart&category=bracelet",
+		"h1":"HEART BRACELET"
+	},
+	"tennis" : {
+		"title" : "Gold Diamond Tennis Bracelet Excel Jewellers Surrey Canada",
+		"description":"Explore Our Gold Diamond Tennis Bracelet Set.Shop Tennis Bracelet From Yellow White Rose Gold At Excel Jewellers Canada Langley Surrey Burnaby Abbotsford.",
+		"canonical":"fine-jewellery?style=tennis&category=bracelet",
+		"h1":"TENNIS BRACELET"
+	},
+	"earrings" : {
+		"title" : "Gold Diamond Earrrings Men Women Excel Jewellers Surrey Canada",
+		"description":"Explore Our Diamond Earrrings. Shop Gemstone Pearl Earrrings From Yellow White Rose Gold At Excel Jewellers Canada Langley Surrey Burnaby Abbotsford Vancouver.",
+		"canonical":"fine-jewellery?category=earrings",
+		"h1":"EARRINGS"
+	},
+	"drop" : {
+		"title" : "Gold Diamond Drop Earrrings Excel Jewellers Surrey Canada",
+		"description":"Explore Our Gold Diamond Drop Earrrings. Shop Drop Earrrings From Yellow White Rose Gold At Excel Jewellers Canada Langley Surrey Burnaby Abbotsford Vancouver.",
+		"canonical":"fine-jewellery?style=drop&category=earrings",
+		"h1":"DROP EARRINGS"
+	},
+	"hoops" : {
+		"title" : "Gold Diamond Hoops Earrrings Excel Jewellers Surrey Canada",
+		"description":"Explore Our Gold Diamond Hoops Earrrings. Shop Hoops Earrrings From Yellow White Rose Gold At Excel Jewellers Canada Langley Surrey Burnaby Abbotsford Vancouver",
+		"canonical":"fine-jewellery?style=hoops&category=earrings",
+		"h1":"HOOP EARRINGS"
+	},
+	"huggies" : {
+		"title" : "Gold Diamond Huggies Earrrings Excel Jewellers Surrey Canada",
+		"description":"Explore Our Gold Diamond Huggies Earrrings. Shop Huggies Earrrings From Yellow White Rose Gold At Excel Jewellers Canada Langley Surrey Burnaby Abbotsford Vancouver",
+		"canonical":"fine-jewellery?style=huggies&category=earrings",
+		"h1":"HUGGIES EARRINGS"
+	},
+	"stud" : {
+		"title" : "Gold Diamond Studs Earrrings Excel Jewellers Surrey Canada",
+		"description":"Explore Our Gold Diamond Studs Earrrings. Shop Studs Earrrings From Yellow White Rose Gold At Excel Jewellers Canada Langley Surrey Burnaby Abbotsford Vancouver",
+		"canonical":"fine-jewellery?style=drop&category=earrings",
+		"h1":"STUD EARRINGS"
+	},
+	"necklaces" : {
+		"title" : "Womens Gold Diamond Necklaces Excel Jewellers Surrey Canada",
+		"description":"Explore Our Gold Diamond Necklaces.Shop Gemstone Necklaces From Yellow White Rose Gold At Excel Jewellers Canada Langley Surrey Burnaby Abbotsford Vancouver",
+		"canonical":"fine-jewellery?category=necklaces",
+		"h1":"NECKLACES"
+	},
+	"bar" : {
+		"title" : "Gold Diamond Bar Necklaces Excel Jewellers Surrey Canada",
+		"description":"Explore Our Gold Diamond Bar Necklaces. Shop Bar Necklaces From Yellow White Rose Gold At Excel Jewellers Canada Langley Surrey Burnaby Abbotsford Vancouver",
+		"canonical":"fine-jewellery?style=bar&category=necklaces",
+		"h1":"BAR NECKLACE"
+	},
+	"choker" : {
+		"title" : "Gold Diamond Choker Necklaces Excel Jewellers Surrey Canada",
+		"description":"Explore Our Gold Diamond Choker Necklaces.Shop Choker Necklace From Yellow White Rose Gold At Excel Jewellers Canada Langley Surrey Burnaby Abbotsford Vancouver",
+		"canonical":"fine-jewellery?style=Choker&category=necklaces",
+		"h1":"CHOKER NECKLACE"
+	},
+	"fashion" : {
+		"title" : "Gold Diamond Fashion Necklaces Excel Jewellers Surrey Canada",
+		"description":"Explore Our Diamond Fashion Necklaces.Shop Fashion Necklace From Yellow White Rose Gold At Excel Jewellers Canada Langley Surrey Burnaby Abbotsford Vancouver",
+		"canonical":"fine-jewellery?style=fashion&category=necklaces",
+		"h1":"FASHION NECKLACE"
+	},
+	"heart" : {
+		"title" : "Gold Diamond Heart Necklaces Excel Jewellers Surrey Canada",
+		"description":"Explore Our Gold Diamond Heart Necklaces.Shop Heart Necklace From Yellow White Rose Gold At Excel Jewellers Canada Langley Surrey Burnaby Abbotsford Vancouver",
+		"canonical":"fine-jewellery?style=heart&category=necklaces",
+		"h1":"HEART NECKLACE"
+	},
+	"locket" : {
+		"title" : "Gold Diamond Locket Necklaces Excel Jewellers Surrey Canada",
+		"description":"Explore Our Gold Diamond Locket Necklaces.Shop Locket Necklace From Yellow White Rose Gold At Excel Jewellers Canada Langley Surrey Burnaby Abbotsford Vancouver",
+		"canonical":"fine-jewellery?style=locket&category=necklaces",
+		"h1":"LOCKET NECKLACE"
+	},
+	"y knots" : {
+		"title" : "Gold Diamond Y Knots Necklaces Excel Jewellers Surrey Canada",
+		"description":"Explore Our Diamond Y Knots Necklaces.Shop Y Knots Necklace From Yellow White Rose Gold At Excel Jewellers Canada Langley Surrey Burnaby Abbotsford Vancouver",
+		"canonical":"fine-jewellery?style=y%20knots&category=necklaces",
+		"h1":"Y-KNOT NECKLACE"
+	},
+	"rings" : {
+		"title" : "Gold Diamond Fashion Rings Excel Jewellers Surrey Canada",
+		"description":"Explore Our Diamond Fashion Rings.Shop Pearl Gemstone Rings From Yellow White Rose Gold At Excel Jewellers Canada Langley Surrey Burnaby Abbotsford Vancouver",
+		"canonical":"fine-jewellery?category=rings",
+		"h1":"RINGS"
+	},
+	"diamond" : {
+		"title" : "Diamond Fashion Rings Excel Jewellers Surrey Langley Canada",
+		"description":"Explore Our Diamond Fashion Rings.Shop Diamond Gemstone Rings From Yellow White Rose Gold At Excel Jewellers Canada Langley Surrey Burnaby Abbotsford Vancouver",
+		"canonical":"fine-jewellery?category=rings&style=Diamond",
+		"h1":"DIAMOND RING"
+	},
+	"gemstone" : {
+		"title" : "Gold Gemstone Fashion Rings Excel Jewellers Surrey Canada",
+		"description":"Explore Our Gemstone Fashion Rings.Shop Pearl Sapphire Ruby Emerald Amethyst Peridot Rings From At Excel Jewellers Canada Langley Surrey Burnaby Vancouver Abbotsford",
+		"canonical":"fine-jewellery?category=rings&style=Gemstone",
+		"h1":"GEMSTONE COLOR RING"
+	},
+	"pearl" : {
+		"title" : "Diamond Pearl Fashion Rings Excel Jewellers Surrey Canada",
+		"description":"Explore Our Diamond Pearl Fashion Rings.Shop Black Pearl Rings From Yellow White Rose Gold At Excel Jewellers Canada Langley Surrey Burnaby Abbotsford Vancouver",
+		"canonical":"fine-jewellery?category=rings&style=Pearl",
+		"h1":"PEARL RING"
+	}
+}

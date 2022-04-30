@@ -1,0 +1,1 @@
+$(document).ready(function(){$(".item-container").click(function(i){$(i.target).is("input")||($(this).find("input").is(":checked")?$(this).find("input").prop("checked",!1):$(this).find("input").prop("checked",!0))}),$("form").submit(function(){if(!(0<$("form input:checked").length))return $(".select-returning").css({background:"#ff4747"}).effect("shake"),!1})});

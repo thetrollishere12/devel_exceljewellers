@@ -1,0 +1,74 @@
+{
+	"" : {
+		"title" : "Shop Mined Shape Diamond Loose Gemstone Certified Surrey Canada",
+		"description":"Shop Our Mined Diamond Loose Gemstone GIA Certified Presented In 360° HD. Create Your Own Engagement Ring With Our Quality Gemstones Canada Surrey Vancouver",
+		"canonical":"diamonds",
+		"h1":"SHOP MINED NATURAL DIAMONDS"
+	},
+	"asscher" : {
+		"title" : "Shop Mined Asscher Shape Diamond Stone Certified Surrey Canada",
+		"description":"Shop Asscher Cut Shape Style Mined Diamond Gemstone. Create Your Asscher Engagement Rings With Our High Quality Gemstones Canada Surrey Vancouver Langley USA",
+		"canonical":"diamonds?shape=asscher",
+		"h1":"ASSCHER SHAPE MINED DIAMONDS"
+	},
+	"cushion" : {
+		"title" : "Shop Mined Cushion Shape Diamond Stone Certified Surrey Canada",
+		"description":"Shop Cushion Cut Shape Style Mined Diamond Gemstone. Create Your Cushion Engagement Rings With Our High Quality Gemstones Canada Surrey Vancouver Langley USA",
+		"canonical":"diamonds?shape=cushion",
+		"h1":"CUSHION SHAPE MINED DIAMONDS"
+	},
+	"emerald" : {
+		"title" : "Shop Mined Emerald Shape Diamond Stone Certified Surrey Canada",
+		"description":"Shop Emerald Cut Shape Style Mined Diamond Gemstone. Create Your Emerald Engagement Rings With Our High Quality Gemstones Canada Surrey Vancouver Langley USA",
+		"canonical":"diamonds?shape=emerald",
+		"h1":"EMERALD SHAPE MINED DIAMONDS"
+	},
+	"heart" : {
+		"title" : "Shop Mined Heart Shape Diamond Stone Certified Surrey Canada",
+		"description":"Shop Heart Cut Shape Style Mined Diamond Gemstone. Create Your Heart Engagement Rings With Our High Quality Gemstones Canada Surrey Vancouver Langley USA",
+		"canonical":"diamonds?shape=heart",
+		"h1":"HEART SHAPE MINED DIAMONDS"
+	},
+	"marquise" : {
+		"title" : "Shop Mined Marquise Shape Diamond Stone Certified Surrey Canada",
+		"description":"Shop Marquise Cut Shape Style Mined Diamond Gemstones.Create Your Marquise Engagement Ring With Our High Quality Gemstones Canada Surrey Vancouver Langley USA",
+		"canonical":"diamonds?shape=marquise",
+		"h1":"MARQUISE SHAPE MINED DIAMONDS"
+	},
+	"oval" : {
+		"title" : "Shop Mined Oval Cut Shape Diamond Stone Certified Surrey Canada",
+		"description":"Shop Oval Cut Shape Style Mined Diamond Gemstones.Create Your Oval Engagement Ring With Our High Quality Mined Gemstones Canada Surrey Vancouver Langley USA",
+		"canonical":"diamonds?shape=oval",
+		"h1":"OVAL SHAPE MINED DIAMONDS"
+	},
+	"pear" : {
+		"title" : "Shop Mined Pear Cut Shape Diamond Stone Certified Surrey Canada",
+		"description":"Shop Pear Cut Shape Style Mined Diamond Gemstones.Create Your Pear Engagement Ring With Our High Quality Mined Gemstones Canada Surrey Vancouver Langley USA",
+		"canonical":"diamonds?shape=pear",
+		"h1":"PEAR SHAPE MINED DIAMONDS"
+	},
+	"radiant" : {
+		"title" : "Shop Mined Radiant Shape Diamond Stone Certified Surrey Canada",
+		"description":"Shop Radiant Cut Shape Style Mined Diamond Gemstone. Create Your Radiant Engagement Rings With Our Quality Loose Gemstones Canada Surrey Vancouver Langley USA",
+		"canonical":"diamonds?shape=radiant",
+		"h1":"RADIANT SHAPE MINED DIAMONDS"
+	},
+	"round" : {
+		"title" : "Shop Mined Round Shape Diamond Loose Stone Certified Canada",
+		"description":"Shop Round Cut Shape Style Mined Diamond Gemstone. Create Your Heart Engagement Rings With Our Quality Loose Gemstones Canada Surrey Vancouver Langley USA",
+		"canonical":"diamonds?shape=round",
+		"h1":"ROUND SHAPE MINED DIAMONDS"
+	},
+	"square" : {
+		"title" : "Shop Mined Square Shape Diamond Loose Stone Certified Canada",
+		"description":"Shop Square Cut Shape Style Mined Diamond Gemstone. Create Your Princess Engagement Rings With Our Quality Loose Gemstones Canada Surrey Vancouver Langley USA",
+		"canonical":"diamonds?shape=square",
+		"h1":"SQUARE SHAPE MINED DIAMONDS"
+	},
+	"trillion" : {
+		"title" : "Shop Mined Trillion Shape Diamond Stone Certified Surrey Canada",
+		"description":"Shop Trillion Cut Shape Style Mined Diamond Gemstones.Create Your Trillion Engagement Ring With Our High Quality Gemstones Canada Surrey Vancouver Langley USA",
+		"canonical":"diamonds?shape=trillion",
+		"h1":"TRILLION SHAPE MINED DIAMONDS"
+	}
+}
