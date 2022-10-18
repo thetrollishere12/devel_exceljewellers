@@ -1,0 +1,1 @@
+<img class="ajax-img" alt='{{$MM}} {{$shape}} {{$weight}} Surrey Vancouver Canada Langley Burnaby Richmond' src="{{ Storage::disk('s3')->url('image/moissanite/'.$img_link.'.jpg', env('AWS_TIME')) }}">

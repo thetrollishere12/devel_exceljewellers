@@ -103,7 +103,7 @@ function customer_order($order_num){
         $cus_ord->total_price = session('cart.shopping_cart_detail.subtotal');
         $cus_ord->shipping_cost = session('cart.shopping_cart_detail.shipping_amount');
         $cus_ord->tax = session('cart.shopping_cart_detail.estimate_total_tax');
-        $cus_ord->discount = session('cart.coupon_code_applied.discount');
+        $cus_ord->discount = (session('cart.coupon_code_applied.discount')) ? session('cart.coupon_code_applied.discount') : 0.00;
         $cus_ord->payment_method = "PayPal";
         $cus_ord->contact_name = session('cart.address.contact_name');
         $cus_ord->phone_number = session('cart.address.phone_number');

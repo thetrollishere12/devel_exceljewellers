@@ -1,0 +1,1 @@
+<img class="ajax-img" alt='{{$MM}} {{$shape}} Surrey Vancouver Canada Langley Burnaby Richmond' src="{{ $img_link }}">

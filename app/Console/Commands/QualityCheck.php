@@ -102,87 +102,87 @@ class QualityCheck extends Command
 
     // Update nonexist 360
 
-        $db = DB::table('engagement_rings')->get();
+    //     $db = DB::table('engagement_rings')->get();
 
-        $text = "";
-      $text .= "Engagement Rings";
-      $text .= "\n";
+    //     $text = "";
+    //   $text .= "Engagement Rings";
+    //   $text .= "\n";
 
-        foreach($db as $key){
+    //     foreach($db as $key){
 
-          if ($key->image_360 != null) {
+    //       if ($key->image_360 != null) {
 
-            if (!File::exists('storage/image/'.$key->file_type.'-360/'.$key->image_360.'/')) {
+    //         if (!File::exists('storage/image/'.$key->file_type.'-360/'.$key->image_360.'/')) {
 
-              $text .= "Item SKU - ".$key->item_sku." Updated to Null Image360 - ".$key->image_360;
-              $text .= "\n";
+    //           $text .= "Item SKU - ".$key->item_sku." Updated to Null Image360 - ".$key->image_360;
+    //           $text .= "\n";
 
-              DB::table('engagement_rings')->where('id',$key->id)->update([
-                "image_360"=>null
-              ]);
-
-              
-
-            }
-
-          }
-
-        }
-
-        $db = DB::table('wedding_bands')->get();
-
-        $text .= "Wedding Bands";
-      $text .= "\n";
-
-        foreach($db as $key){
-
-          if ($key->image_360 != null) {
-
-            if (!File::exists('storage/image/'.$key->file_type.'-360/'.$key->image_360.'/')) {
-
-              $text .= "Item SKU - ".$key->item_sku." Updated to Null Image360 - ".$key->image_360;
-              $text .= "\n";
-
-              DB::table('wedding_bands')->where('id',$key->id)->update([
-                "image_360"=>null
-              ]);
+    //           DB::table('engagement_rings')->where('id',$key->id)->update([
+    //             "image_360"=>null
+    //           ]);
 
               
 
-            }
+    //         }
 
-          }
+    //       }
 
-        }
+    //     }
 
-        $db = DB::table('fine_jewelleries')->get();
+    //     $db = DB::table('wedding_bands')->get();
 
-        $text .= "Fine Jewellery";
-      $text .= "\n";
+    //     $text .= "Wedding Bands";
+    //   $text .= "\n";
 
-        foreach($db as $key){
+    //     foreach($db as $key){
 
-          if ($key->image_360 != null) {
+    //       if ($key->image_360 != null) {
 
-            if (!File::exists('storage/image/'.$key->file_type.'-360/'.$key->image_360.'/')) {
+    //         if (!File::exists('storage/image/'.$key->file_type.'-360/'.$key->image_360.'/')) {
 
-              $text .= "Item SKU - ".$key->item_sku." Updated to Null Image360 - ".$key->image_360;
-              $text .= "\n";
+    //           $text .= "Item SKU - ".$key->item_sku." Updated to Null Image360 - ".$key->image_360;
+    //           $text .= "\n";
 
-              DB::table('fine_jewelleries')->where('id',$key->id)->update([
-                "image_360"=>null
-              ]);
+    //           DB::table('wedding_bands')->where('id',$key->id)->update([
+    //             "image_360"=>null
+    //           ]);
 
-            }
+              
 
-          }
+    //         }
 
-        }
+    //       }
+
+    //     }
+
+    //     $db = DB::table('fine_jewelleries')->get();
+
+    //     $text .= "Fine Jewellery";
+    //   $text .= "\n";
+
+    //     foreach($db as $key){
+
+    //       if ($key->image_360 != null) {
+
+    //         if (!File::exists('storage/image/'.$key->file_type.'-360/'.$key->image_360.'/')) {
+
+    //           $text .= "Item SKU - ".$key->item_sku." Updated to Null Image360 - ".$key->image_360;
+    //           $text .= "\n";
+
+    //           DB::table('fine_jewelleries')->where('id',$key->id)->update([
+    //             "image_360"=>null
+    //           ]);
+
+    //         }
+
+    //       }
+
+    //     }
 
 
-    $myfile = fopen(storage_path()."/logs/quality_check/updated_360_".Carbon::now()->format('y-m-d').".txt", "w") or die("Unable to open file!");
-    fwrite($myfile,$text);
-    fclose($myfile);
+    // $myfile = fopen(storage_path()."/logs/quality_check/updated_360_".Carbon::now()->format('y-m-d').".txt", "w") or die("Unable to open file!");
+    // fwrite($myfile,$text);
+    // fclose($myfile);
 
 
     // Make Metals Uppercase
@@ -213,7 +213,7 @@ class QualityCheck extends Command
 
     // Facebook Store Data Extract
 
-    $fp = fopen(storage_path()."/logs/quality_check/online_store_engagement_ring.csv", 'wb');
+    $fp = fopen(storage_path()."/app/public/data/online_store_engagement_ring.csv", 'wb');
 
     $columns = array('id','item_group_id','title','description','availability','condition','price','sale_price','link','image_link','additional_image_link','brand','product_type','google_product_id','material','color','colour','category','gemstone','free_shipping_limit');
     fputcsv($fp,$columns);
@@ -278,13 +278,13 @@ class QualityCheck extends Command
         }
 
 
-        $columns = [$key->item_sku,$key->item_code,$key->name,$key->description,'in stock','new',$key->price,$key->sale_price,'https://www.exceljewellers.com/engagement-ring/'.$key->item_sku,'https://www.exceljewellers.com/storage/image/engagement-ring/'.$key->image.'-1.jpg',$text,$key->brand,$key->file_type.' > '.$key->style,'Apparel & Accessories > Jewelry > Rings',$key->metal,$key->color,$key->color,$key->file_type,'','300 CAD'];
+        $columns = [$key->item_sku,$key->item_code,$key->name,$key->description,'in stock','new',$key->price,$key->sale_price,'https://www.exceljewellers.com/engagement-ring/'.$key->item_sku,'https://www.exceljewellers.com/storage/image/engagement-ring/'.$key->image.'-1.jpg',$text,$key->brand,$key->file_type.' > '.$key->style,'Apparel & Accessories > Jewelry > Rings',$key->metal,$key->color,$key->color,$key->file_type,'',env('FREE_SHIPPING_AMOUNT').' CAD'];
         fputcsv($fp,$columns);
 
     }
     fclose($fp);
 
-    $fp = fopen(storage_path()."/logs/quality_check/online_store_wedding_band.csv", 'wb');
+    $fp = fopen(storage_path()."/app/public/data/online_store_wedding_band.csv", 'wb');
 
     $columns = array('id','item_group_id','title','description','availability','condition','price','sale_price','link','image_link','additional_image_link','brand','product_type','google_product_id','material','color','colour','category','gemstone','free_shipping_limit');
     fputcsv($fp,$columns);
@@ -348,13 +348,13 @@ class QualityCheck extends Command
           $text .= ',https://www.exceljewellers.com/storage/image/wedding-band/'.$key->image.'-7.jpg';
         }
 
-        $columns = [$key->item_sku,$key->item_code,$key->name,$key->description,'in stock','new',$key->price,$key->sale_price,'https://www.exceljewellers.com/wedding-band/'.$key->item_sku,'https://www.exceljewellers.com/storage/image/wedding-band/'.$key->image.'-1.jpg',$text,$key->brand,$key->file_type.' > '.$key->style,'Apparel & Accessories > Jewelry > Rings',$key->metal,$key->color,$key->color,$key->file_type,'','300 CAD'];
+        $columns = [$key->item_sku,$key->item_code,$key->name,$key->description,'in stock','new',$key->price,$key->sale_price,'https://www.exceljewellers.com/wedding-band/'.$key->item_sku,'https://www.exceljewellers.com/storage/image/wedding-band/'.$key->image.'-1.jpg',$text,$key->brand,$key->file_type.' > '.$key->style,'Apparel & Accessories > Jewelry > Rings',$key->metal,$key->color,$key->color,$key->file_type,'',env('FREE_SHIPPING_AMOUNT').' CAD'];
         fputcsv($fp,$columns);
 
     }
     fclose($fp);
 
-    $fp = fopen(storage_path()."/logs/quality_check/online_store_fine_jewellery.csv", 'wb');
+    $fp = fopen(storage_path()."/app/public/data/online_store_fine_jewellery.csv", 'wb');
 
     $columns = array('id','item_group_id','title','description','availability','condition','price','sale_price','link','image_link','additional_image_link','brand','product_type','google_product_id','material','color','colour','category','gemstone','free_shipping_limit');
     fputcsv($fp,$columns);
@@ -420,226 +420,21 @@ class QualityCheck extends Command
         }
 
 
-        $columns = [$key->item_sku,$key->item_code,$key->name,$key->description,'in stock','new',$key->price,$key->sale_price,'https://www.exceljewellers.com/fine-jewellery/'.$key->item_sku,'https://www.exceljewellers.com/storage/image/fine-jewellery/'.$key->image.'-1.jpg',$text,$key->brand,$key->file_type.' > '.$key->category.' > '.$key->style,'Apparel & Accessories > Jewelry > '.$key->category,$key->metal,$key->color,$key->color,$key->file_type,$key->main_stone,'300 CAD'];
+        $columns = [$key->item_sku,$key->item_code,$key->name,$key->description,'in stock','new',$key->price,$key->sale_price,'https://www.exceljewellers.com/fine-jewellery/'.$key->item_sku,'https://www.exceljewellers.com/storage/image/fine-jewellery/'.$key->image.'-1.jpg',$text,$key->brand,$key->file_type.' > '.$key->category.' > '.$key->style,'Apparel & Accessories > Jewelry > '.$key->category,$key->metal,$key->color,$key->color,$key->file_type,$key->main_stone,env('FREE_SHIPPING_AMOUNT').' CAD'];
         fputcsv($fp,$columns);
 
     }
     fclose($fp);
 
-// Google MC
-
-    $fp = fopen(storage_path()."/logs/quality_check/google_engagement_ring.csv", 'wb');
-
-    $columns = array('id','item_group_id','title','description','availability','condition','price','sale_price','link','image_link','additional_image_link','brand','product_type','google_product_id','material','color','colour','category','gemstone','free_shipping_limit');
-    fputcsv($fp,$columns);
-
-    $db = DB::table('engagement_rings')->get();
-    foreach ($db as $key) {
-
-        $text = "";
-
-        if (File::exists('storage/image/engagement-ring/'.$key->image.'-2.jpg')) {
-
-          if ($text != "") {
-            $text .= ',';
-          }
-
-          $text .= 'https://www.exceljewellers.com/storage/image/engagement-ring/'.$key->image.'-2.jpg';
-        }
-
-        if (File::exists('storage/image/engagement-ring/'.$key->image.'-3.jpg')) {
-
-          if ($text != "") {
-            $text .= ',';
-          }
-
-          $text .= ',https://www.exceljewellers.com/storage/image/engagement-ring/'.$key->image.'-3.jpg';
-        }
-
-        if (File::exists('storage/image/engagement-ring/'.$key->image.'-4.jpg')) {
-
-          if ($text != "") {
-            $text .= ',';
-          }
-
-          $text .= ',https://www.exceljewellers.com/storage/image/engagement-ring/'.$key->image.'-4.jpg';
-        }
-
-        if (File::exists('storage/image/engagement-ring/'.$key->image.'-5.jpg')) {
-
-          if ($text != "") {
-            $text .= ',';
-          }
-
-          $text .= ',https://www.exceljewellers.com/storage/image/engagement-ring/'.$key->image.'-5.jpg';
-        }
-
-        if (File::exists('storage/image/engagement-ring/'.$key->image.'-6.jpg')) {
-
-          if ($text != "") {
-            $text .= ',';
-          }
-
-          $text .= ',https://www.exceljewellers.com/storage/image/engagement-ring/'.$key->image.'-6.jpg';
-        }
-
-        if (File::exists('storage/image/engagement-ring/'.$key->image.'-7.jpg')) {
-
-          if ($text != "") {
-            $text .= ',';
-          }
-
-          $text .= ',https://www.exceljewellers.com/storage/image/engagement-ring/'.$key->image.'-7.jpg';
-        }
-
-
-        $columns = [$key->item_sku,$key->item_code,$key->name,$key->description,'in stock','new',$key->price." ".$key->currency,"",'https://www.exceljewellers.com/engagement-ring/'.$key->item_sku,'https://www.exceljewellers.com/storage/image/engagement-ring/'.$key->image.'-1.jpg',$text,$key->brand,$key->file_type.' > '.$key->style,'Apparel & Accessories > Jewelry > Rings',$key->metal,$key->color,$key->color,$key->file_type,'','300 CAD'];
-        fputcsv($fp,$columns);
-
-    }
-    fclose($fp);
-
-    $fp = fopen(storage_path()."/logs/quality_check/google_wedding_band.csv", 'wb');
-
-    $columns = array('id','item_group_id','title','description','availability','condition','price','sale_price','link','image_link','additional_image_link','brand','product_type','google_product_id','material','color','colour','category','gemstone','free_shipping_limit');
-    fputcsv($fp,$columns);
-
-    $db = DB::table('wedding_bands')->get();
-    foreach ($db as $key) {
-
-        $text = "";
-
-        if (File::exists('storage/image/engagement-ring/'.$key->image.'-2.jpg')) {
-
-          if ($text != "") {
-            $text .= ',';
-          }
-
-          $text .= 'https://www.exceljewellers.com/storage/image/wedding-band/'.$key->image.'-2.jpg';
-        }
-
-        if (File::exists('storage/image/engagement-ring/'.$key->image.'-3.jpg')) {
-
-          if ($text != "") {
-            $text .= ',';
-          }
-
-          $text .= ',https://www.exceljewellers.com/storage/image/wedding-band/'.$key->image.'-3.jpg';
-        }
-
-        if (File::exists('storage/image/engagement-ring/'.$key->image.'-4.jpg')) {
-
-          if ($text != "") {
-            $text .= ',';
-          }
-
-          $text .= ',https://www.exceljewellers.com/storage/image/wedding-band/'.$key->image.'-4.jpg';
-        }
-
-        if (File::exists('storage/image/engagement-ring/'.$key->image.'-5.jpg')) {
-
-          if ($text != "") {
-            $text .= ',';
-          }
-
-          $text .= ',https://www.exceljewellers.com/storage/image/wedding-band/'.$key->image.'-5.jpg';
-        }
-
-        if (File::exists('storage/image/engagement-ring/'.$key->image.'-6.jpg')) {
-
-          if ($text != "") {
-            $text .= ',';
-          }
-
-          $text .= ',https://www.exceljewellers.com/storage/image/wedding-band/'.$key->image.'-6.jpg';
-        }
-
-        if (File::exists('storage/image/engagement-ring/'.$key->image.'-7.jpg')) {
-
-          if ($text != "") {
-            $text .= ',';
-          }
-
-          $text .= ',https://www.exceljewellers.com/storage/image/wedding-band/'.$key->image.'-7.jpg';
-        }
-
-        $columns = [$key->item_sku,$key->item_code,$key->name,$key->description,'in stock','new',$key->price." ".$key->currency,"",'https://www.exceljewellers.com/wedding-band/'.$key->item_sku,'https://www.exceljewellers.com/storage/image/wedding-band/'.$key->image.'-1.jpg',$text,$key->brand,$key->file_type.' > '.$key->style,'Apparel & Accessories > Jewelry > Rings',$key->metal,$key->color,$key->color,$key->file_type,'','300 CAD'];
-        fputcsv($fp,$columns);
-
-    }
-    fclose($fp);
-
-    $fp = fopen(storage_path()."/logs/quality_check/google_fine_jewellery.csv", 'wb');
-
-    $columns = array('id','item_group_id','title','description','availability','condition','price','sale_price','link','image_link','additional_image_link','brand','product_type','google_product_id','material','color','colour','category','gemstone','free_shipping_limit');
-    fputcsv($fp,$columns);
-
-    $db = DB::table('fine_jewelleries')->get();
-    foreach ($db as $key) {
-
-        $text = "";
-
-        if (File::exists('storage/image/engagement-ring/'.$key->image.'-2.jpg')) {
-
-          if ($text != "") {
-            $text .= ',';
-          }
-
-          $text .= 'https://www.exceljewellers.com/storage/image/fine-jewellery/'.$key->image.'-2.jpg';
-        }
-
-        if (File::exists('storage/image/engagement-ring/'.$key->image.'-3.jpg')) {
-
-          if ($text != "") {
-            $text .= ',';
-          }
-
-          $text .= 'https://www.exceljewellers.com/storage/image/fine-jewellery/'.$key->image.'-3.jpg';
-        }
-
-        if (File::exists('storage/image/engagement-ring/'.$key->image.'-4.jpg')) {
-
-          if ($text != "") {
-            $text .= ',';
-          }
-
-          $text .= 'https://www.exceljewellers.com/storage/image/fine-jewellery/'.$key->image.'-4.jpg';
-        }
-
-        if (File::exists('storage/image/engagement-ring/'.$key->image.'-5.jpg')) {
-
-          if ($text != "") {
-            $text .= ',';
-          }
-
-          $text .= 'https://www.exceljewellers.com/storage/image/fine-jewellery/'.$key->image.'-5.jpg';
-        }
-
-        if (File::exists('storage/image/engagement-ring/'.$key->image.'-6.jpg')) {
-
-          if ($text != "") {
-            $text .= ',';
-          }
-
-          $text .= 'https://www.exceljewellers.com/storage/image/fine-jewellery/'.$key->image.'-6.jpg';
-        }
-
-        if (File::exists('storage/image/engagement-ring/'.$key->image.'-7.jpg')) {
-
-          if ($text != "") {
-            $text .= ',';
-          }
-
-          $text .= 'https://www.exceljewellers.com/storage/image/fine-jewellery/'.$key->image.'-7.jpg';
-        }
-
-
-        $columns = [$key->item_sku,$key->item_code,$key->name,$key->description,'in stock','new',$key->price." ".$key->currency,"",'https://www.exceljewellers.com/fine-jewellery/'.$key->item_sku,'https://www.exceljewellers.com/storage/image/fine-jewellery/'.$key->image.'-1.jpg',$text,$key->brand,$key->file_type.' > '.$key->category.' > '.$key->style,'Apparel & Accessories > Jewelry > '.$key->category,$key->metal,$key->color,$key->color,$key->file_type,$key->main_stone,'300 CAD'];
-        fputcsv($fp,$columns);
-
-    }
-
-      fclose($fp);
+      // UPDATE SQUARE TO PRINCESS
+
+      DB::table('lab_grown_diamonds')->where('shape','Square')->update([
+        'shape'=>'Princess'
+      ]);
+
+      DB::table('natural_diamonds')->where('shape','Square')->update([
+        'shape'=>'Princess'
+      ]);
 
       DB::table('fine_jewelleries')->where('item_sku','PK1144-C')->delete();
       DB::table('fine_jewelleries')->where('item_sku','PK1144-A')->delete();
@@ -683,6 +478,64 @@ class QualityCheck extends Command
 
       DB::table('wedding_bands')->where('item_sku','WB13986R6W83JJ')->delete();
       DB::table('wedding_bands')->where('item_sku','WB14022S3W44JJ')->delete();
+      DB::table('wedding_bands')->where('item_sku','AN11380-55K44JJ')->delete();
+      DB::table('wedding_bands')->where('item_sku','WB7479PT4JJ')->delete();
+      DB::table('wedding_bands')->where('item_sku','AN11380-85K44JJ')->delete();
+      DB::table('wedding_bands')->where('item_sku','WB10252S8K44JJ')->delete();
+      DB::table('wedding_bands')->where('item_sku','WB6002P6W44JJ')->delete();
+      DB::table('wedding_bands')->where('item_sku','WB14399O4W44JJ')->delete();
+      DB::table('wedding_bands')->where('item_sku','WB10252P8Y44JJ')->delete();
+      DB::table('wedding_bands')->where('item_sku','WB12342R6W44JJ')->delete();
+      DB::table('wedding_bands')->where('item_sku','WB13914S4W44JJ')->delete();
+      DB::table('wedding_bands')->where('item_sku','WB11746S4W44JJ')->delete();
+      DB::table('wedding_bands')->where('item_sku','WB13910S4Y44JJ')->delete();
+      DB::table('wedding_bands')->where('item_sku','AN11380-75W44JJ')->delete();
+      DB::table('wedding_bands')->where('item_sku','WB11746O4W44JJ')->delete();
+      DB::table('wedding_bands')->where('item_sku','WB7227V1K44JJ')->delete();
+      DB::table('wedding_bands')->where('item_sku','AN11380-85Y44JJ')->delete();
+      DB::table('wedding_bands')->where('item_sku','WB7227V1Y44JJ')->delete();
+      DB::table('wedding_bands')->where('item_sku','WB7232W44JJ')->delete();
+      DB::table('wedding_bands')->where('item_sku','AN11380-65K44JJ')->delete();
+      DB::table('wedding_bands')->where('item_sku','AN11380-55W44JJ')->delete();
+      DB::table('wedding_bands')->where('item_sku','AN11380-65W44JJ')->delete();
+      DB::table('wedding_bands')->where('item_sku','WB13910S4K44JJ')->delete();
+      DB::table('wedding_bands')->where('item_sku','WB6664R8Y44JJ')->delete();
+      DB::table('wedding_bands')->where('item_sku','AN11380-55Y44JJ')->delete();
+      DB::table('wedding_bands')->where('item_sku','AN11380-65Y44JJ')->delete();
+      DB::table('wedding_bands')->where('item_sku','WB13853C4K44JJ')->delete();
+      DB::table('wedding_bands')->where('item_sku','WB13910C4Y44JJ')->delete();
+      DB::table('wedding_bands')->where('item_sku','WB10252E8K44JJ')->delete();
+      DB::table('wedding_bands')->where('item_sku','WB11755E8K44JJ')->delete();
+      DB::table('wedding_bands')->where('item_sku','AN11380-75Y44JJ')->delete();
+      DB::table('wedding_bands')->where('item_sku','WB13857R4VK44JJ')->delete();
+      DB::table('wedding_bands')->where('item_sku','WB13883R3Y44JJ')->delete();
+
+
+      DB::table('engagement_rings')->where('item_sku','ER13914S4K44JJ')->delete();
+      DB::table('engagement_rings')->where('item_sku','ER12836M4W44JJ')->delete();
+      DB::table('engagement_rings')->where('item_sku','ER12672M4Y44JJ')->delete();
+      DB::table('engagement_rings')->where('item_sku','ER7277M5PT4JJ')->delete();
+      DB::table('engagement_rings')->where('item_sku','ER13913S4Y44JJ')->delete();
+      DB::table('engagement_rings')->where('item_sku','ER5798S4PT4JJ')->delete();
+
+      DB::table('engagement_rings')->where('item_sku','ER7261M4PT4JJ')->delete();
+      DB::table('engagement_rings')->where('item_sku','ER7533C4W44JJ')->delete();
+      DB::table('engagement_rings')->where('item_sku','ER12672E4Y44JJ')->delete();
+      DB::table('engagement_rings')->where('item_sku','ER6685S4W4JJJ')->delete();
+      DB::table('engagement_rings')->where('item_sku','ER12836R4W44JJ')->delete();
+      DB::table('engagement_rings')->where('item_sku','ER12672P4Y44JJ')->delete();
+
+      DB::table('engagement_rings')->where('item_sku','ER7517O4W4JJJ')->delete();
+      DB::table('engagement_rings')->where('item_sku','ER13914S4W44JJ')->delete();
+      DB::table('engagement_rings')->where('item_sku','ER13914E4Y44JJ')->delete();
+      DB::table('engagement_rings')->where('item_sku','ER12836E4W44JJ')->delete();
+      DB::table('engagement_rings')->where('item_sku','ER7517E4W4JJJ')->delete();
+
+
+
+      DB::table('fine_jewelleries')->where('item_sku','BG4212-6Y45JJ')->delete();
+      DB::table('fine_jewelleries')->where('item_sku','LR51511W45GA')->delete();
+
 
 
     }

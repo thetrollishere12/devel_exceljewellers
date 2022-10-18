@@ -66,7 +66,7 @@ class ProductController extends Controller
 
                 $img = $product->image.'-'.$i.'.jpg';
 
-                if (File::exists(public_path('storage/image/engagement-ring/'.$img))) {
+                if (Storage::disk('s3')->exists('image/engagement-ring/'.$img) == true) {
                     $images[] = $img;
                 }else{
                     continue;
@@ -145,7 +145,7 @@ class ProductController extends Controller
 
                 $img = $product->image.'-'.$i.'.jpg';
 
-                if (File::exists(public_path('storage/image/wedding-band/'.$img))) {
+                if (Storage::disk('s3')->exists('image/wedding-band/'.$img) == true) {
                     $images[] = $img;
                 }else{
                     continue;
@@ -226,7 +226,7 @@ class ProductController extends Controller
 
                 $img = $product->image.'-'.$i.'.jpg';
 
-                if (File::exists(public_path('storage/image/fine-jewellery/'.$img))) {
+                if (Storage::disk('s3')->exists('image/fine-jewellery/'.$img) == true) {
                     $images[] = $img;
                 }else{
                     continue;

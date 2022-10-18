@@ -1,0 +1,3 @@
+<div class="main-image-container">
+    <div class="main-image cloudimage-360" style="z-index: 0 !important;" data-folder="{{ Storage::disk('s3')->url('image/'.$link.'/') }}" data-filename="{index}.jpg" data-amount="{{ count(Storage::disk('s3')->allFiles('image/'.$link.'/')) }}" data-spin-reverse autoplay data-speed="300" data-drag-speed="300" data-autoplay data-magnifier="2" data-pointer-zoom="2"></div>
+</div>

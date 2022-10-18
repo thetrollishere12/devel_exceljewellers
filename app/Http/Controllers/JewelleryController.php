@@ -4,194 +4,32 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use DB;
+use Storage;
 
 class JewelleryController extends Controller
 {
     public function engagement_ring(Request $request){
-
-        $unique = DB::table('engagement_rings')
-        ->when($request->category != null, function($q){
-            $q->where('style',str_replace(['+','%20'], ' ', request('category')));
-        })
-        ->when($request->brand != null, function($q){
-            $q->where('brand','LIKE','%'.request('brand').'%');
-        })
-        ->when($request->shape != null, function($q){
-            $q->where('stoneshape','LIKE','%'.request('shape').'%');
-        })
-        ->when($request->color != null, function($q){
-            $q->where('color','LIKE','%'.request('color').'%');
-        })
-        ->when($request->metal != null, function($q){
-            $q->where('metal',request('metal'));
-        })
-        ->when($request->video == "image_360", function($q){
-            $q->where('image_360','!=',null);
-        })
-        ->when($request->sort == "high", function($q){
-            $q->orderByDesc('price');
-        })
-        ->when($request->sort == "low", function($q){
-            $q->orderBy('price');
-        })
-        ->get(['item_code','item_sku','color','stoneshape','brand','metal','style','name','image','currency','price','sale_price','image_360'])->unique('item_code');
-
-        $count = ceil($unique->count()/24);
-        
-        $all =$unique->pluck('item_sku');
-    
-        $engagement = $unique->take(24);
-
-        $array=[];
-
-        foreach ($engagement as $key => $value) {
-
-            $other_metal_color = DB::table('engagement_rings')->where('item_code',$value->item_code)->where('item_sku','!=',$value->item_sku)->where('color','!=',$value->color)->where('stoneshape',$value->stoneshape)->orderBy('price','ASC')->orderBy('color','DESC')->get(['color','image','item_sku','item_code','name','price','carat','currency'])->unique('color');
-
-            $array[] = [
-                "product"=>$value,
-                "other_color"=>$other_metal_color
-            ];
-
-        }
-
-        $path = storage_path()."/json/engagement-ring.json";
-        $product = json_decode(file_get_contents($path), true); 
-
-        return view('shop/products',['type'=>'engagement-ring','data'=>$product[str_replace('+',' ',strtolower(($request->brand) ? $request->brand : $request->category))],'products'=>$array,'count'=>$count,'all'=>$all]);
-            
+        return \App\Helper\JewelleryHelper::engagement_ring_helper($request,'');
     }
 
     public function wedding_band(Request $request){
-        
-        $unique = DB::table('wedding_bands')
-        ->when($request->category != null, function($q){
-            $q->where('style',str_replace(['+','%20'], ' ', request('category')));
-        })
-        ->when($request->brand != null, function($q){
-            $q->where('brand','LIKE','%'.request('brand').'%');
-        })
-        ->when($request->color != null, function($q){
-            $q->where('color','LIKE','%'.request('color').'%');
-        })
-        ->when($request->metal != null, function($q){
-            $q->where('metal',request('metal'));
-        })
-        ->when($request->video == "image_360", function($q){
-            $q->where('image_360','!=',null);
-        })
-        ->when($request->sort == "high", function($q){
-            $q->orderBy('price','DESC');
-        })
-        ->when($request->sort == "low", function($q){
-            $q->orderBy('price','ASC');
-        })
-        ->get(['item_code','item_sku','color','brand','metal','style','name','image','currency','price','sale_price','image_360'])->unique('item_code');
-
-        $count = ceil($unique->count()/24);
-        
-        $all =$unique->pluck('item_sku');
-    
-        $engagement = $unique->take(24);
-
-        $array=[];
-
-        foreach ($engagement as $key => $value) {
-
-            $other_metal_color = DB::table('wedding_bands')->where('item_code',$value->item_code)->where('item_sku','!=',$value->item_sku)->where('color','!=',$value->color)->orderBy('price','ASC')->orderBy('color','DESC')->get(['color','image','item_sku','item_code','name','price','carat','currency'])->unique('color');
-
-            $array[] = [
-                "product"=>$value,
-                "other_color"=>$other_metal_color
-            ];
-
-        }
-
-        $path = storage_path()."/json/wedding-band.json";
-        $product = json_decode(file_get_contents($path), true); 
-
-        return view('shop/products',['type'=>'wedding-band','data'=>$product[str_replace('+',' ',strtolower(($request->brand) ? $request->brand : $request->category))],'products'=>$array,'count'=>$count,'all'=>$all]);
-
+        return \App\Helper\JewelleryHelper::wedding_band_helper($request,'');
     }
 
     public function fine_jewellery(Request $request){
+        return \App\Helper\JewelleryHelper::fine_jewellery_helper($request,'');
+    }
 
-        $fine_jewellery = DB::table('fine_jewelleries');
+    public function moissanite(Request $request){
+       return \App\Helper\JewelleryHelper::moissanite_helper($request,'');
+    }
 
-        $unique = DB::table('fine_jewelleries')
-        ->when($request->category != null, function($q){
-            $q->where('category','LIKE',request('category'));
-        })
-        ->when($request->style != null, function($q){
-            $q->where('style',str_replace('+', ' ', request('style')));
-        })
-        ->when($request->brand != null, function($q){
-            $q->where('brand','LIKE','%'.request('brand').'%');
-        })
-        ->when($request->color != null, function($q){
-            $q->where('color','LIKE','%'.request('color').'%');
-        })
-        ->when($request->metal != null, function($q){
-            $q->where('metal',request('metal'));
-        })
-        ->when($request->video == "image_360", function($q){
-            $q->where('image_360','!=',null);
-        })
-        ->when($request->gem != null && $request->gem == "gemstone", function($q){
-            $q->where('main_stone','!=',null)->where('main_stone','!=',"")->where('main_stone','!=','diamond');
-        })
-        ->when($request->gem != null && $request->gem != "gemstone", function($q){
-            $q->where('main_stone','!=',null)->where('main_stone','!=',"")->where('main_stone',request('gem'));
-        })
-        ->when($request->sort == "high", function($q){
-            $q->orderBy('price','DESC');
-        })
-        ->when($request->sort == "low", function($q){
-            $q->orderBy('price','ASC');
-        })
-        ->get(['item_code','item_sku','color','brand','metal','main_stone','style','name','image','currency','price','sale_price','image_360'])->unique('item_code');
+    public function lab_grown(Request $request){
+        return \App\Helper\JewelleryHelper::lab_grown_helper($request,'');
+    }
 
-        $count = ceil($unique->count()/24);
-        
-        $all =$unique->pluck('item_sku');
-    
-        $fine_jewellery = $unique->take(24);
-
-        $array=[];
-
-        foreach ($fine_jewellery as $key => $value) {
-
-            $other_metal_color = DB::table('fine_jewelleries')->where('item_code',$value->item_code)->where('main_stone',$value->main_stone)->where('item_sku','!=',$value->item_sku)->where('color','!=',$value->color)->orderBy('color','DESC')->get(['color','image','item_sku','item_code','name','price','carat','currency'])->unique('color');
-
-            $array[] = [
-                "product"=>$value,
-                "other_color"=>$other_metal_color
-            ];
-
-            if ($request->gem == null) {
-
-                $similar_stone_product = DB::table('fine_jewelleries')->where('item_code',$value->item_code)->where('item_sku','!=',$value->item_sku)->where('main_stone','!=',$value->main_stone)->get()->unique('main_stone');
-
-                foreach ($similar_stone_product as $key2 => $value2) {
-                
-                    $other_metal_color = DB::table('fine_jewelleries')->where('item_code',$value2->item_code)->where('item_sku','!=',$value2->item_sku)->where('color','!=',$value2->color)->where('main_stone','=',$value2->main_stone)->orderBy('price','ASC')->orderBy('color','DESC')->get(['color','image','item_sku','item_code','name','price','carat','currency'])->unique('color');
-
-                    $array[] = [
-                        "product"=>$value2,
-                        "other_color"=>$other_metal_color
-                    ];
-
-                }
-
-            }
-
-        }
-
-        $path = storage_path()."/json/fine-jewellery.json";
-        $product = json_decode(file_get_contents($path), true); 
-
-        return view('shop/products',['type'=>'fine-jewellery','data'=>$product[str_replace('+',' ',strtolower(($request->style) ? $request->style : (($request->gem) ? $request->gem : $request->category)))],'products'=>$array,'count'=>$count,'all'=>$all]);
-        
+    public function diamonds(Request $request){
+        return \App\Helper\JewelleryHelper::diamonds_helper($request,'');
     }
 
     public function search(Request $request){
@@ -388,7 +226,7 @@ class JewelleryController extends Controller
 
                     $array[] = [
                         'file_type'=>$value->file_type,
-                        'link_sku'=>$value->id,
+                        'link_sku'=>$value->item_sku,
                         'name'=>$value->name,
                         'image'=>$image,
                         'image_360'=>$value->video_link,
@@ -407,7 +245,7 @@ class JewelleryController extends Controller
                         'file_type'=>$value->file_type,
                         'link_sku'=>$value->item_sku,
                         'name'=>$value->name,
-                        'image'=>asset('storage/image/'.$value->file_type.'-list/'.$value->image.'-1.jpg'),
+                        'image'=>Storage::disk('s3')->url('image/'.$value->file_type.'-list/'.$value->image.'-1.jpg', env('AWS_TIME')),
                         'image_360'=>$value->image_360,
                         'currency'=>$value->currency,
                         'price'=>$value->price,
@@ -423,86 +261,6 @@ class JewelleryController extends Controller
 
             return view('shop/search',['products'=>$array,'count'=>$count,'all'=>$all,'keyword'=>$request->search]);
         }
-    }
-
-    public function moissanite(Request $req){
-
-        $unique = DB::table('moissanite')
-        ->when($req->shape != null, function($q){
-            $q->where('shape',request('shape'));
-        })
-        ->when($req->width != null, function($q){
-
-            if (strpos(request('width'), '.') !== false) {
-                $q->where('MM','LIKE','%'.preg_replace("/[^0-9.]/", "", request('width')).'%');
-            }else{
-                $q->where('MM','LIKE','%'.preg_replace("/[^0-9.]/", "", request('width')).'%')->where('MM','NOT LIKE','%.%');
-            }
-
-        })
-        ->when($req->carat != null, function($q){
-            $c = explode("-",  request('carat'));
-            $q->whereBetween('carat', [$c[0],$c[1]]);
-        })
-        ->get();
-
-        $count = ceil($unique->count()/24);
-        $all =$unique->pluck('item_sku');
-        $db = $unique->take(24);
-
-        $path = storage_path()."/json/moissanite.json";
-        $product = json_decode(file_get_contents($path), true); 
-
-        return view('shop/moissanite',['type'=>'moissanite','data'=>$product[strtolower($req->shape)],'products'=>$db,'count'=>$count,'all'=>$all]);
-
-    }
-
-    public function lab_grown(Request $req){
-        // return $req;
-
-        $lab = DB::table('lab_grown_diamonds')->when($req->shape != null, function($q){
-            $q->where('shape','LIKE','%'.request('shape').'%');
-        })->when($req->cut != null, function($q){
-            $q->where('cut','LIKE','%'.request('cut').'%');
-        })->get();
-
-        $high = $lab->max('price');
-
-        $carat = $lab->max('carat');
-
-        $count = ceil($lab->count()/24);
-        $all =$lab->pluck('item_sku');
-        $db = $lab->take(24);
-
-        $path = storage_path()."/json/lab-diamond.json";
-        $product = json_decode(file_get_contents($path), true); 
-
-        return view('shop/stones',['type'=>'lab-grown-diamond','data'=>$product[strtolower($req->shape)],'products'=>$db,'count'=>$count,'all'=>$all,'high'=>$high,'carat'=>$carat]);
-
-    }
-
-    public function diamonds(Request $req){
-        // return $req;
-
-        $gem = DB::table('natural_diamonds')->when($req->shape != null, function($q){
-            $q->where('shape','LIKE','%'.request('shape').'%');
-        })->when($req->cut != null, function($q){
-            $q->where('cut','LIKE','%'.request('cut').'%');
-        })->get();
-
-        $high = $gem->max('price');
-
-        $carat = $gem->max('carat');
-
-        $count = ceil($gem->count()/24);
-        $all =$gem->pluck('item_sku');
-        $db = $gem->take(24);
-
-        $path = storage_path()."/json/natural-diamond.json";
-        $product = json_decode(file_get_contents($path), true); 
-
-        return view('shop/stones',['type'=>'diamonds','data'=>$product[strtolower($req->shape)],'products'=>$db,'count'=>$count,'all'=>$all,'high'=>$high,'carat'=>$carat]);
-
     }
 
 }

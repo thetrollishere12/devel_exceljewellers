@@ -1,0 +1,1 @@
+<img class="ajax-img" alt='@if($color == "Platinum")Platinum @else {{$metal}} {{$color}} Gold @endif {{$style}} {{$name}} {{$brand}} Surrey Vancouver Canada Langley Burnaby Richmond' src="{{ Storage::disk('s3')->url('image/'.$type.'-list/'.$image.'-1.jpg', env('AWS_TIME')) }}">

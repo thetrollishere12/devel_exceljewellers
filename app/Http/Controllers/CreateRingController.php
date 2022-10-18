@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use DB;
 use File;
 use App\Helper\AppHelper;
+use Storage;
 
 class CreateRingController extends Controller
 {
@@ -180,7 +181,7 @@ class CreateRingController extends Controller
 
                     $img = $product->image.'-'.$i.'.jpg';
 
-                    if (File::exists(public_path('storage/image/engagement-ring/'.$img))) {
+                    if (Storage::disk('s3')->exists('image/engagement-ring/'.$img) == true) {
                         $images[] = $img;
                     }else{
                         continue;

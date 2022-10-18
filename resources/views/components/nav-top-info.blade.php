@@ -1,0 +1,1 @@
+<div class="main-bg-c text-xs text-white text-center py-2">FREE SHIPPING ON ORDERS OVER ${{env('FREE_SHIPPING_AMOUNT')}}</div>

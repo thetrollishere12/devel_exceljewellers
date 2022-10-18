@@ -1,0 +1,1 @@
+<button class="main-bg-c text-white rounded py-2 px-4">{{ $text }}</button>

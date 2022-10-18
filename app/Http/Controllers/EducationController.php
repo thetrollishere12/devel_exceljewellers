@@ -32,6 +32,10 @@ class EducationController extends Controller
     	return view('education.diamond-cut');
     }
 
+    public function diamond_gia(){
+        return view('education.lab-diamond.gia_diamond');
+    }
+
     public function engagement(){
         return view('education.engagement-ring.engagement-ring');
     }

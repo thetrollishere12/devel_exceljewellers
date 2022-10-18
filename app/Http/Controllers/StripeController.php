@@ -18,6 +18,8 @@ class StripeController extends Controller
 
     public function stripe_payment(Request $request){
 
+    	
+
     	set_time_limit(0);
 
 		if (!session('cart') || count(session('cart.shopping_cart')) == 0 || empty(session('cart.shopping_cart')) || !$request->stripeToken) {
@@ -77,14 +79,14 @@ class StripeController extends Controller
 			return redirect()->to('/checkout')->withErrors(['error','Error With Billing Option. Please Retry']);
 		}
 
-		if (session('cart.shopping_cart_detail.estimate_total_tax') != null) {
+		// if (session('cart.shopping_cart_detail.estimate_total_tax') != null) {
 
 			$customer = customer_create($token,$billing);
 
-		}else{
+		// }else{
 		
-			return redirect()->to('/checkout')->withErrors(['error','Error Please Retry (Error 701)']);
-		}
+		// 	return redirect()->to('/checkout')->withErrors(['error','Error Please Retry (Error 701)']);
+		// }
 
 		$charge = create_charge(["description"=>$description,"id"=>$customer->id]);
 

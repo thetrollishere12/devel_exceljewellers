@@ -23,4 +23,14 @@ class HomeController extends Controller
         return view('account.home',['user'=>$user,'addresses'=>$addresses,'json'=>$json]);
     }
 
+    public function test(){
+
+        // phpinfo();
+
+        // return 1;
+
+        $test = DB::connection('edge')->table('activityShow')->get();
+        dd($test);
+    }
+
 }

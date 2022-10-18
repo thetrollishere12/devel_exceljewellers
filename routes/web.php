@@ -19,6 +19,8 @@ Route::get('/', function () {
     
 })->name('main');
 
+Route::get('/test', 'HomeController@test');
+
 Route::get('/dashboard', 'HomeController@index')->name('dashboard');
 
 // Google
@@ -42,6 +44,7 @@ Route::post('currency','AjaxController@currency');
 
 
 // Jewellery shop
+
 Route::get('/engagement-ring','JewelleryController@engagement_ring');
 
 Route::get('/wedding-band','JewelleryController@wedding_band');
@@ -55,6 +58,24 @@ Route::get('/lab-grown-diamond','JewelleryController@lab_grown');
 Route::get('/diamonds','JewelleryController@diamonds');
 
 Route::get('/search','JewelleryController@search');
+
+// Jewellery shop Param
+
+Route::get('/engagement-ring/style/{param}','JewelleryParamController@engagement_ring');
+
+Route::get('/wedding-band/style/{param}','JewelleryParamController@wedding_band');
+
+Route::get('/fine-jewellery/style/{param}','JewelleryParamController@fine_jewellery');
+
+Route::get('/fine-jewellery/style/{param}/{param2}','JewelleryParamController@fine_jewellery_param2');
+
+Route::get('/fine-jewellery/style/{param}/{param2}/{param3}','JewelleryParamController@fine_jewellery_param3');
+
+Route::get('/moissanite/style/{param}','JewelleryParamController@moissanite');
+
+Route::get('/lab-grown-diamond/style/{param}','JewelleryParamController@lab_grown');
+
+Route::get('/diamonds/style/{param}','JewelleryParamController@diamonds');
 
 // ajax
 
@@ -185,6 +206,9 @@ Route::get('/education-diamond-clarity','EducationController@diamond_clarity');
 Route::get('/education-diamond-carat','EducationController@diamond_carat');
 Route::get('/education-diamond-cut','EducationController@diamond_cut');
 
+Route::get('/education-gia-diamond','EducationController@diamond_gia');
+
+
 Route::get('/education-engagement','EducationController@engagement');
 Route::get('/education-eng-style','EducationController@eng_style');
 Route::get('/education-eng-setting','EducationController@eng_setting');
@@ -194,11 +218,6 @@ Route::get('/education-weddingband','EducationController@weddingband');
 Route::get('/education-weddingband-style','EducationController@weddingband_style');
 Route::get('/education-weddingband-metal','EducationController@weddingband_metal');
 Route::get('/education-weddingband-size','EducationController@weddingband_size');
-
-// Route::get('/education-diamond','EducationController@diamond_cut');
-// Route::get('/education-diamond','EducationController@diamond_clarity');
-// Route::get('/education-diamond','EducationController@diamond_color');
-// Route::get('/education-diamond','EducationController@diamond_carat');
 
 // Service
 Route::get('trade-up','ServiceController@trade_up');

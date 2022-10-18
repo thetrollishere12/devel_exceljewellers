@@ -95,7 +95,7 @@ public function payment_type(Request $request){
                              $shipping_amount = 19.99;
                         }
 
-                        $tax = DB::table('tax_code_rates')->where('country','=',$country[0])->where('state_province','=',$request->shipping_s_p_r)->value('tax_rate');
+                        $tax = DB::table('tax_codes')->where('country','=',$country[0])->where('state_province','=',$request->shipping_s_p_r)->value('tax_rate');
                         break;
                     case"United States":
                         if ($subtotal > env('FREE_SHIPPING_AMOUNT')) {

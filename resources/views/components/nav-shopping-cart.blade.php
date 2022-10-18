@@ -1,0 +1,1 @@
+<div><a href="{{url('/shopcart')}}"><span class="icon-cart pr-1"></span><span style="font-size: 10px;">CART (<span class="cart-num">{{$count}}</span>)</span></a></div>

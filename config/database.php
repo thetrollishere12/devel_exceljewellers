@@ -63,6 +63,22 @@ return [
             ]) : [],
         ],
 
+
+
+        'edge' => [
+            'driver' => 'sqlsrv',
+            'url' => env('DATABASE_URL'),
+            'host'      => env('EDGE_DB_HOST'),
+            'port'      => env('EDGE_DB_PORT'),
+            'database'  => env('EDGE_DB_DATABASE','forge'),
+            'username'  => env('EDGE_DB_USERNAME','forge'),
+            'password'  => env('EDGE_DB_PASSWORD'),
+            'charset' => 'utf8',
+            'prefix' => '',
+            'prefix_indexes' => true,
+        ],
+
+
         'pgsql' => [
             'driver' => 'pgsql',
             'url' => env('DATABASE_URL'),

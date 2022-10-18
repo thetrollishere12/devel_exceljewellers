@@ -167,6 +167,11 @@ class StullerLabDiamond extends Command
                 $eng->video_link=$key['Videos'][0]["Url"];
                 $eng->item_link=$key['WebAddress'];
                 $eng->save();
+
+                if ($eng->shape == "Square") {
+                    $eng->update(['shape'=>'Princess']);
+                }
+                
                 $new++;
             }
                                                    
